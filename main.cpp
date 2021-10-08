@@ -1,12 +1,8 @@
 int main() {
-    int s = 0, a = 1, b = 2, t = 0;
-    while(a <= 4000000){
-        t = b;
-        b = a + b;
-        a = t;
-        if(t % 2 == 0){
-            s += t;
-        }
+    int s = 0;
+    for(int i = 0; i < 1000; i++){
+        if (i % 3 == 0 || i % 5 == 0)
+            s += i;
     }
     return 0;
 }
